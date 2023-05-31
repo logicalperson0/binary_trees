@@ -15,9 +15,9 @@ size_t binary_tree_recur(const binary_tree_t *tree)
 
 	else
 	{
-		deptht = binary_tree_recur(tree->parent) + 1;
+		deptht = binary_tree_recur(tree->parent);
 
-		return (deptht);
+		return (deptht + 1);
 	}
 
 }
