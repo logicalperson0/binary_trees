@@ -50,4 +50,6 @@ int binary_tree_balance(const binary_tree_t *tree);
 int binary_height(const binary_tree_t *tree);
 int binary_height_recur(const binary_tree_t *tree);
 
+int binary_tree_is_full(const binary_tree_t *tree);
+
 #endif
