@@ -64,4 +64,8 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 void curr_height(const binary_tree_t *tree, void (*func)(int));
 void print_nodes(const binary_tree_t *tree, void (*func)(int), int y);
 
+int binary_tree_is_complete(const binary_tree_t *tree);
+int count_nodes(const binary_tree_t *tree);
+int complete_binary(const binary_tree_t *tree, int numnodes, int y);
+
 #endif
