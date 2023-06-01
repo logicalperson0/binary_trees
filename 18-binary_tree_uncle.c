@@ -23,6 +23,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
  *@node: pointer to the node to find the uncle
  *
  *Return: pointer to the uncle node
+ *similar func to find a sibling node
  */
 binary_tree_t *binary_check_uncle(binary_tree_t *node)
 {
