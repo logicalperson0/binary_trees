@@ -66,18 +66,18 @@ void print_nodes(const binary_tree_t *tree, void (*func)(int), int y)
  */
 size_t binary_tree_recur(const binary_tree_t *tree)
 {
-		int heightl, heightr;
+	int heightl, heightr;
 
 	if (tree == NULL)
 		return (0);
 
-		else
-		{
-			heightl = binary_tree_recur(tree->left);
-			heightr = binary_tree_recur(tree->right);
+	else
+    {
+        heightl = binary_tree_recur(tree->left);
+        heightr = binary_tree_recur(tree->right);
 
-			if (heightl > heightr)
-				return (heightl + 1);
-			return (heightr + 1);
-		}
+        if (heightl > heightr)
+            return (heightl + 1);
+        return (heightr + 1);
+    }
 }
