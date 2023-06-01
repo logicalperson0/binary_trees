@@ -72,12 +72,12 @@ size_t binary_tree_recur(const binary_tree_t *tree)
 		return (0);
 
 	else
-    {
-        heightl = binary_tree_recur(tree->left);
-        heightr = binary_tree_recur(tree->right);
+	{
+		heightl = binary_tree_recur(tree->left);
+		heightr = binary_tree_recur(tree->right);
 
-        if (heightl > heightr)
-            return (heightl + 1);
-        return (heightr + 1);
-    }
+		if (heightl > heightr)
+			return (heightl + 1);
+		return (heightr + 1);
+	}
 }
